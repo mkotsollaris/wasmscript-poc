@@ -16,6 +16,8 @@ function fibJs(n: number) {
         return 1;
     }
     return fibJs(n - 1) + fibJs(n - 2)
+function stringConcat(a: string, b: string) {
+    return a + b;
 }
 
 console.time('addJS');
@@ -33,3 +35,10 @@ console.timeEnd('fibJs')
 console.time('myModule.fib')
 myModule.fib(20);
 console.timeEnd('myModule.fib')
+console.time('stringConcat');
+stringConcat('Hello', ' World!');
+console.timeEnd('stringConcat');
+
+console.time('myModule.stringConcat');
+myModule.stringConcat('Hello', ' World!');
+console.timeEnd('myModule.stringConcat');
