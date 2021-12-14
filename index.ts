@@ -1,5 +1,6 @@
 export interface Export {
     add: (a: number, b: number) => number;
+    fib: (n: number) => number;
 }
 
 const fs = require("fs");
