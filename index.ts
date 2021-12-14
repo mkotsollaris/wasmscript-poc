@@ -1,5 +1,6 @@
 export interface Export {
     add: (a: number, b: number) => number;
+    stringConcat: (a: string, b: string) => string;
 }
 
 const fs = require("fs");
